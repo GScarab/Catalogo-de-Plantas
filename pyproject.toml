@@ -1,0 +1,23 @@
+[project]
+name = "catalogo-plantas"
+version = "0.1.0"
+description = "API simples para catálogo de plantas"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+]
+
+[tool.pytest.ini_options]
+pythonpath = "."
+addopts = "-p no:warnings"
+
+[tool.ruff]
+line-length = 79
+
+[tool.ruff.lint]
+select = ["I", "F", "E", "W"]
+
+[tool.ruff.format]
+quote-style = "single"
